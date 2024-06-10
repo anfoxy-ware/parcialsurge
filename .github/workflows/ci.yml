@@ -1,0 +1,30 @@
+name: Publicar Pagina a Surge.sh
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Configura node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Instala Surge
+      run: npm install --global surge
+
+    - name: Build and Deploy
+      env:
+        SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
+      run: |
+        surge token $SURGE_TOKEN
+        surge --project ./ --domain $SURGE_DOMAIN.surge.sh
