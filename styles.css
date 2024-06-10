@@ -7,13 +7,13 @@
 
 body {
     min-height: 100vh;
-    background-color: #310909;
+    background-color: #090c31;
     display: grid;
     place-items: center;
 }
 
 .calculadora {
-    background-color: #3c1515;
+    background-color: #15173c;
     color: white;
     width: 350px;
     max-width: 100%;
@@ -26,7 +26,7 @@ body {
 
 .pantalla {
     grid-column: 1 / -1;
-    background-color: #310909;
+    background-color: #090c31;
     padding: 1.5rem;
     font-size: 2rem;
     text-align: right;
