@@ -29,5 +29,4 @@ jobs:
         SURGE_TOKEN: ${{ secrets.SURGE_API_KEY }}
         SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
       run: |
-        surge login --token $SURGE_TOKEN
-        surge --project ./ --domain $SURGE_DOMAIN.surge.sh
+        surge --project ./ --domain $SURGE_DOMAIN.surge.sh --token $SURGE_TOKEN
