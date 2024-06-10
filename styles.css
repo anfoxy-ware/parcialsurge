@@ -7,13 +7,13 @@
 
 body {
     min-height: 100vh;
-    background-color: #310909;
+    background-color: #090c31;
     display: grid;
     place-items: center;
 }
 
 .calculadora {
-    background-color: #f7f7f7;
+    background-color: #15173c;
     color: white;
     width: 350px;
     max-width: 100%;
@@ -26,7 +26,7 @@ body {
 
 .pantalla {
     grid-column: 1 / -1;
-    background-color: #0011ff;
+    background-color: #090c31;
     padding: 1.5rem;
     font-size: 2rem;
     text-align: right;
@@ -37,7 +37,7 @@ body {
 }
 
 .btn {
-    background-color: #3c1515;;
+    background-color: #15173c;;
     color: white;
     border: 0;
     padding: 1.5rem .5rem;
@@ -49,7 +49,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #310909;
+    background-color: #090c31;
 }
 
 #cero {
